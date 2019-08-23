@@ -8,4 +8,7 @@ public class Klass {
 	public int getNumber(){
 		return klass;
 	}
+	public String getDisplayName(){
+		return "Class " + klass;
+	}
 }
