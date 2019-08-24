@@ -6,9 +6,9 @@ import org.junit.Test;
 import static org.fest.assertions.api.Assertions.assertThat;
 
 public class Practice07Test {
-    private static Klass klass;
+    private Klass klass;
     public static void main(String[] args){
-        Person tom = new Person("Tom", 21);
+        Student tom = new Student("Tom", 21,new Klass(2));
         System.out.println(tom.introduce());
     }
 
@@ -62,7 +62,7 @@ public class Practice07Test {
 //        assertThat(tom.getAge()).isEqualTo(21);
 //        assertThat(tom.getKlass()).isEqualTo(klass);
 //    }
-//
+
 //    @Test
 //    public void should_teacher_introduce_itself_with_which_class_it_teaches() throws Exception {
 //        Teacher tom = new Teacher("Tom", 21, klass);
